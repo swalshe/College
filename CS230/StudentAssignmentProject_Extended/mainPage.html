@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<script>
+function avg()
+{
+var table=document.getElementById("myTable");
+var rows=table.rows;
+var num=0;
+var counter=0;
+for(var i = 1; i < rows.length; i++){
+ var cells = rows[i].cells;
+ var sum = 0;
+ counter=0;
+ average=0;
+ for(var x = 2; x<(cells.length-1); x++){
+  var cell = cells[x];
+  var check1=parseInt(cell.innerHTML);
+  if(cell.innerHTML=='<br>')
+  {
+  	cell.innerHTML="";
+   cell.style.backgroundColor = "white";
+	cell.style.color="black";
+  }
+else if(isNaN(cell.innerHTML) | (check1<0)|(check1>100)&&(cell.innerHTML!='-'))
+  {
+ 	cell.innerHTML="<td>"+"-"+"</td>";
+  }
+  else
+  {
+  if(cell.innerHTML!='-')
+  {
+  cell.style.backgroundColor = "white";
+	cell.style.color="black";
+  sum += parseInt(cell.innerHTML);
+   
+  }
+
+  }
+  if(cell.innerHTML=="-")
+  {
+  
+   cell.style.backgroundColor = "yellow";
+	cell.style.color="black";
+  	num++;
+  }
+   counter++;
+  }
+ var average = (sum/counter).toFixed(0);
+rows[i].cells[cells.length-1].innerHTML = "<td>"+ " "+"</td>";
+var res=average.toString();
+res=res+"%";
+if(average<40)
+{
+	rows[i].cells[cells.length-1].innerHTML += "<td>"+res+"</td>";
+	 rows[i].cells[cells.length-1].style.backgroundColor = "red";
+	 rows[i].cells[cells.length-1].style.color="white";
+
+	 }
+else{
+rows[i].cells[cells.length-1].innerHTML += "<td>"+res+"</td>";
+rows[i].cells[cells.length-1].style.backgroundColor = "white";
+	 rows[i].cells[cells.length-1].style.color="black";
+	}
+ 
+}
+rows[0].cells[cells.length-1].innerHTML = "<td>"+"Final Grade"+"</td>";
+rows[0].cells[cells.length-1].style.backgroundColor = "lightgrey";
+	 rows[0].cells[cells.length-1].style.color="black";
+	 
+	 
+   var cells = rows[0].cells;
+   for(var i=2;i<cells.length-1;i++)
+   {
+   rows[0].cells[i].innerHTML = "<td>"+"Assignment "+"</td>";
+   rows[0].cells[i].innerHTML += "<td>"+(i-1)+"</td>";
+rows[0].cells[i].style.backgroundColor = "lightgrey";
+	 rows[0].cells[i].style.color="black";
+   }
+   
+   
+   rows[0].cells[cells.length-1].innerHTML = "<td>"+"Final Grade"+"</td>";
+rows[0].cells[cells.length-1].style.backgroundColor = "lightgrey";
+	 rows[0].cells[cells.length-1].style.color="black";
+	 
+	 
+	 var str=num.toString();
+	document.getElementById('output').value="Unsubmitted Assignments: "+str;
+	str=" ";
+};
+
+
+
+
+
+function newRow()
+{
+
+var table=document.getElementById("myTable");
+var rows=table.rows;
+var len=rows.length;
+var lastRow=myTable.insertRow(len);
+var cells = rows[0].cells;
+
+ for(var x = 0; x<cells.length; x++){
+  var cell=lastRow.insertCell(x);
+  cell.contentEditable=true;
+  cell.innerHTML="<td>"+"-"+"</td>";
+  }
+avg()
+
+};
+
+function newColumn()
+{
+avg();
+/*
+var table=document.getElementById("myTable");
+var rows=table.rows;
+var len=rows.length;
+var cells = rows[0].cells;
+var lastCol=myTable.insertCol(cells.length+1);
+var cell = cells[8];
+ for(var x = 0; x<len; x++){
+   var cell=lastRow.insertCell(8);
+ 		rows[x].cells[8].innerHTML += "<td>"+"*"+"</td>";
+	  cell.contentEditable=true;
+  }
+  */
+  
+  
+	var table=document.getElementById("myTable");
+	var rows=table.rows;
+for(var i = 0; i < rows.length; i++){
+ rows[i].innerHTML += "<td>"+"-"+"</td>";
+  rows[i].contentEditable=true;
+ 
+}
+
+
+avg();
+};
+
+
+
+
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var myCookie = decodeURIComponent(document.cookie);
+    var ca = myCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+		var cstring = c.substring(name.length, c.length);
+
+		return (JSON.parse(cstring)).array;
+}
+    }
+    return "";
+}
+
+
+function save_cookie() {
+
+    var array = document.getElementById("myTable");
+
+    var json = {
+           "array": array
+    }
+
+    setCookie("array", JSON.stringify(json), 30);
+
+    alert (array + " saved");
+
+}
+
+
+
+
+
+
+function deleteRow()
+{
+	var num = document.getElementById("rownumber").value;
+	var table = document.getElementById("myTable");
+	var rows=table.rows;
+	if(num==0)
+	{
+	alert("You cannot delete the row containing the column headings");
+	}
+	else if(num>rows.length)
+	{
+	var temp="Row ";
+	temp+=num;
+	temp+=" does not exist";
+	alert(temp);
+	}
+	else if(num>0)
+	{
+	document.getElementById("myTable").deleteRow(num);
+	}
+	
+};
+
+function deleteAssign()
+{
+	var num = document.getElementById("colnumber").value;
+	num++;
+	var table=document.getElementById("myTable");
+	var rows=table.rows;
+	if((num<=1)||(num>rows[0].cells.length-2)){
+	num--;
+	  var temp='Assignment ';
+	  temp+=num;
+	  temp+=" does not exist";
+	  alert(temp);
+	  }
+	else if(num>1)
+	{
+	for(var i = 0; i < rows.length; i++){
+
+	  rows[i].deleteCell(num);
+
+	  }
+	  
+	}
+
+
+avg();
+};
+function highlight(col)
+{
+//var row =element.parentNode.parentNode.rowIndex;
+//var col=element.parentNode.cellIndex;
+
+
+	var table=document.getElementById("myTable");
+	var rows=table.rows;
+	if(col>1)
+	{
+		
+		//var cells = rows[row].cells;
+		for(var i=1;i<rows.length;i++)
+		{
+		if(rows[i].cells[col].style.backgroundColor == "#ccebff")
+		{
+		rows[i].cells[col].style.backgroundColor = "white"
+		}
+		else{
+		rows[i].cells[col].style.backgroundColor = "#ccebff";
+		}
+	}
+
+	}
+};
+</script>
+
+<style>
+body 	{ background-color:#AFCAD5; }
+h3 	{ color: black; text-align: center; }
+p 	{ font-family: verdana; font-size: 15px; }
+div 	{ font-family: verdana; font-size: 15px; }
+
+
+
+	table, th,td{
+	border:1px solid black;
+	font-family:sans-serif;	
+	font-size:15px;
+	}
+	td{
+	font-size:15px;
+	text-align:right;
+	}
+	table{
+	background-color:white;}
+	th, td{
+	padding:5px;
+	}
+	th{
+	text-align:centre;
+	background-color:lightgrey;
+	}
+	button{
+	font-size:15px;
+	}
+  tr:hover
+  {
+    
+	background-color:#ccebff;
+}
+</style>
+<html>
+<div id="wrapper" align="center">
+
+
+
+<table id="myTable" onkeyup="avg()" >
+<tr>
+    <th onclick="highlight(0)">Student Name</th>
+    <th onclick="highlight(1)">Student ID</th>
+    <th onclick="highlight(2)">Assignment 1</th>
+	<th onclick="highlight(3)">Assignment 2</th>
+	<th onclick="highlight(4)">Assignment 3</th>
+	<th onclick="highlight(5)">Assignment 4</th>
+	<th onclick="highlight(6)">Assignment 5</th>
+	<th>Final Grade</th>
+
+  </tr>
+    <tr>
+        <td id="row1" style="text-align: left;" contenteditable="true">Jill</td>
+        <td style="text-align: left;" contenteditable="true" >76347</td>
+        <td contenteditable="true">70</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >67</td>
+		<td contenteditable="true" >82</td>
+		<td contenteditable="true" >78</td>
+		<td id="Final"></td>
+    </tr>
+   
+    <tr>
+        <td id="row2" style="text-align: left;" contenteditable="true" >James</td>
+        <td style="text-align: left;" contenteditable="true" >12095</td>
+      <td contenteditable="true">70</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >92</td>
+		<td contenteditable="true" >87</td>
+		<td contenteditable="true" >90</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Kevin</td>
+        <td style="text-align: left;" contenteditable="true" >79347</td>
+        <td contenteditable="true" >63</td>
+		<td contenteditable="true" >56</td>
+		<td contenteditable="true" >-</td>
+		<td contenteditable="true" >45</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >David</td>
+        <td style="text-align: left;" contenteditable="true" >12346</td>
+        <td contenteditable="true" >45</td>
+		<td contenteditable="true" >-</td>
+		<td contenteditable="true" >-</td>
+		<td contenteditable="true" >-</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Aoife</td>
+        <td style="text-align: left;" contenteditable="true" >78563</td>
+        <td contenteditable="true" >70</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >75</td>
+		<td contenteditable="true" >78</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Erin</td>
+        <td style="text-align: left;" contenteditable="true" >76347</td>
+        <td contenteditable="true" >96</td>
+		<td contenteditable="true" >85</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >91</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+   
+    <tr>
+        <td style="text-align: left;" contenteditable="true">Lorraine</td>
+        <td style="text-align: left;" contenteditable="true" >12095</td>
+        <td contenteditable="true" >98</td>
+		<td contenteditable="true" >89</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >70</td>
+		<td contenteditable="true" >76</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Simon</td>
+        <td style="text-align: left;" contenteditable="true" >79347</td>
+        <td contenteditable="true" >90</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >85</td>
+		<td contenteditable="true" >88</td>
+		<td contenteditable="true" >89</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Mary</td>
+        <td style="text-align: left;" contenteditable="true" >12346</td>
+        <td contenteditable="true" >45</td>
+		<td contenteditable="true" >70</td>
+		<td contenteditable="true" >80</td>
+		<td contenteditable="true" >0</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+	
+	 <tr>
+        <td style="text-align: left;" contenteditable="true" >Amy</td>
+        <td style="text-align: left;" contenteditable="true" >78563</td>
+        <td contenteditable="true" >70</td>
+		<td contenteditable="true" >60</td>
+		<td contenteditable="true" >52</td>
+		<td contenteditable="true" >60</td>
+		<td contenteditable="true" >-</td>
+		<td id="Final"></td>
+    </tr>
+</table>
+<br>
+<br>
+
+
+ <button type="button" onclick="avg()">Average</button>
+ <output type="text" id="output" value="Incomplete Assignments"> 
+ </output>
+  
+<br>
+
+ <button type="button" onclick="newRow()">New Row</button>
+
+ <button type="button" onclick="newColumn()">New Comumn</button>
+ 
+<br>
+
+
+<button	 type="button" onclick="save_cookie()">Save data</button>
+<button  type="button" id="btns" onclick="getCookie()">Load data</button>
+
+</div>
+<div align="center">
+
+<form>
+	<input type="text" id="rownumber" name="rownumber">
+
+<button type="button" onclick="deleteRow()">Delete Row</button>		
+</form>
+
+</div>
+
+<div align="center">
+
+<form>
+	<input type="text" id="colnumber" name="colnumber">
+
+<button type="button" onclick="deleteAssign()">Delete Assignment</button>		
+</form>
+
+</div>
+</html>

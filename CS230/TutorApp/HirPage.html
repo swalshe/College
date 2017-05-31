@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+			
+
+<HTML>
+<style>
+body 	{ background-color:white; }
+h3 	{ color: black; text-align: center; }
+h4 	{ color: black; text-align: left; }
+p 	{ font-family: verdana; font-size: 17px; }
+div 	{ font-family: verdana; font-size: 20px; align:center; }
+h1 {text-align:center}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:25px 45px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;
+    box-shadow: 2px 2px #A9A9A9;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:25px 45px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;
+    box-shadow: 2px 2px #A9A9A9;}
+.tg .tg-erlg{font-weight:bold;background-color:#efefef;vertical-align:top}
+.tg .tg-2sfh{font-weight:bold;background-color:#efefef}
+.tg .tg-jq4u{background-color:#ffffff;text-align:center}
+.tg .tg-5j4b{font-weight:bold;background-color:#ffffff;text-align:center;vertical-align:top}
+.image_off, #home:hover .image_on{
+   display:none
+}
+.image_on, #home:hover .image_off{
+   display:block
+}
+table {
+    
+	margin: 0px auto;  
+}
+
+</style>
+
+<body>
+<h1>Hiragana Tutor app</h1>
+
+  <audio id="n" src="Media/Audio/n.ogg">Play</audio> 
+  <audio id="wa" src="Media/Audio/wa.ogg">Play</audio>
+  <audio id="ra" src="Media/Audio/ra.ogg">Play</audio> 
+  <audio id="ya" src="Media/Audio/ya.ogg">Play</audio>
+  <audio id="ma" src="Media/Audio/ma.ogg">Play</audio>
+  <audio id="ha" src="Media/Audio/ha.ogg">Play</audio> 
+  <audio id="na" src="Media/Audio/na.ogg">Play</audio>
+  <audio id="ta" src="Media/Audio/ta.ogg">Play</audio>
+  <audio id="sa" src="Media/Audio/sa.ogg">Play</audio> 
+  <audio id="ka" src="Media/Audio/ka.ogg">Play</audio>
+  <audio id="a" src="Media/Audio/a.ogg">Play</audio>
+  
+  <audio id="ri" src="Media/Audio/ri.ogg">Play</audio> 
+  <audio id="mi" src="Media/Audio/mi.ogg">Play</audio>
+  <audio id="hi" src="Media/Audio/hi.ogg">Play</audio> 
+  <audio id="ni" src="Media/Audio/ni.ogg">Play</audio>
+  <audio id="ti" src="Media/Audio/ti.ogg">Play</audio>
+  <audio id="si" src="Media/Audio/si.ogg">Play</audio> 
+  <audio id="ki" src="Media/Audio/ki.ogg">Play</audio>
+  <audio id="i" src="Media/Audio/i.ogg">Play</audio>
+    
+  <audio id="ru" src="Media/Audio/ru.ogg">Play</audio>
+  <audio id="yu" src="Media/Audio/yu.ogg">Play</audio>  
+  <audio id="mu" src="Media/Audio/mu.ogg">Play</audio>
+  <audio id="hu" src="Media/Audio/hu.ogg">Play</audio> 
+  <audio id="nu" src="Media/Audio/nu.ogg">Play</audio>
+  <audio id="tu" src="Media/Audio/tu.ogg">Play</audio>
+  <audio id="su" src="Media/Audio/su.ogg">Play</audio> 
+  <audio id="ku" src="Media/Audio/ku.ogg">Play</audio>
+  <audio id="u" src="Media/Audio/u.ogg">Play</audio>
+  
+  <audio id="re" src="Media/Audio/re.ogg">Play</audio> 
+  <audio id="me" src="Media/Audio/me.ogg">Play</audio>
+  <audio id="he" src="Media/Audio/he.ogg">Play</audio> 
+  <audio id="ne" src="Media/Audio/ne.ogg">Play</audio>
+  <audio id="te" src="Media/Audio/te.ogg">Play</audio>
+  <audio id="se" src="Media/Audio/se.ogg">Play</audio> 
+  <audio id="ke" src="Media/Audio/ke.ogg">Play</audio>
+  <audio id="e" src="Media/Audio/e.ogg">Play</audio>
+  
+  
+  <audio id="wo" src="Media/Audio/wo.ogg">Play</audio>
+  <audio id="ro" src="Media/Audio/ro.ogg">Play</audio>
+  <audio id="yo" src="Media/Audio/yo.ogg">Play</audio>  
+  <audio id="mo" src="Media/Audio/mo.ogg">Play</audio>
+  <audio id="ho" src="Media/Audio/ho.ogg">Play</audio> 
+  <audio id="no" src="Media/Audio/no.ogg">Play</audio>
+  <audio id="to" src="Media/Audio/to.ogg">Play</audio>
+  <audio id="so" src="Media/Audio/so.ogg">Play</audio> 
+  <audio id="ko" src="Media/Audio/ko.ogg">Play</audio>
+  <audio id="o" src="Media/Audio/o.ogg">Play</audio>  
+  
+<table class="tg" id="myTable" >
+
+  <tr>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/n.png" alt="n" style="width:22px;height:20px;" onclick="document.getElementById('n').play()"><img class="image_off" src="Media/Gifs/n.gif" alt="n" style="width:22px;height:20px;" onclick="document.getElementById('n').play()">n</td>
+    <td id="home" class="tg-jq4u"><img align="center" class="image_on" src="Media/Images/wa.png" alt="wa" style="width:22px;height:20px;" onclick="document.getElementById('wa').play()"><img onclick="document.getElementById('wa').play()" class="image_off" src="Media/Gifs/wa.gif" alt="wa" style="width:22px;height:20px;"><br>wa</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ra.png" alt="ra" style="width:22px;height:20px;" onclick="document.getElementById('ra').play()"><img onclick="document.getElementById('ra').play()" class="image_off" src="Media/Gifs/ra.gif" alt="ra" style="width:22px;height:20px;"><br>ra</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ya.png" alt="ya" style="width:22px;height:20px;" onclick="document.getElementById('ya').play()"><img onclick="document.getElementById('ya').play()" class="image_off" src="Media/Gifs/ya.gif" alt="ya" style="width:22px;height:20px;"><br>ya</td>
+	<td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ma.png" alt="ma" style="width:22px;height:20px;" onclick="document.getElementById('ma').play()"><img onclick="document.getElementById('ma').play()" class="image_off" src="Media/Gifs/ma.gif" alt="ma" style="width:22px;height:20px;"><br>ma</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ha.png" alt="ha" style="width:22px;height:20px;" onclick="document.getElementById('ha').play()"><img onclick="document.getElementById('ha').play()" class="image_off" src="Media/Gifs/ha.gif" alt="ha" style="width:22px;height:20px;"><br>ha</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/na.png" alt="na" style="width:22px;height:20px;" onclick="document.getElementById('na').play()"><img onclick="document.getElementById('na').play()" class="image_off" src="Media/Gifs/na.gif" alt="na" style="width:22px;height:20px;"><br>na</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ta.png" alt="ta" style="width:22px;height:20px;" onclick="document.getElementById('ta').play()"><img onclick="document.getElementById('ta').play()" class="image_off" src="Media/Gifs/ta.gif" alt="ta" style="width:22px;height:20px;"><br>ta</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/sa.png" alt="sa" style="width:22px;height:20px;" onclick="document.getElementById('sa').play()"><img onclick="document.getElementById('sa').play()" class="image_off" src="Media/Gifs/sa.gif" alt="sa" style="width:22px;height:20px;"><br>sa</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ka.png" alt="ka" style="width:22px;height:20px;" onclick="document.getElementById('ka').play()"><img onclick="document.getElementById('ka').play()" class="image_off" src="Media/Gifs/ka.gif" alt="ka" style="width:22px;height:20px;"><br>ka</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/a.png" alt="a" style="width:22px;height:20px;" onclick="document.getElementById('a').play()" ><img onclick="document.getElementById('a').play()" class="image_off" src="Media/Gifs/a.gif" alt="a" style="width:22px;height:20px;"><br>a</td>
+
+  </tr>
+  <tr>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ri.png" alt="ri" style="width:22px;height:20px;" onclick="document.getElementById('ri').play()"><img onclick="document.getElementById('ri').play()" class="image_off" src="Media/Gifs/ri.gif" alt="ri" style="width:22px;height:20px;"><br>ri</td>
+    <td id="home" class="tg-jq4u"></td>
+	<td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/mi.png" alt="mi" style="width:22px;height:20px;" onclick="document.getElementById('mi').play()" ><img onclick="document.getElementById('mi').play()" class="image_off" src="Media/Gifs/mi.gif" alt="mi" style="width:22px;height:20px;"><br>mi</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/hi.png" alt="hi" style="width:22px;height:20px;" onclick="document.getElementById('hi').play()"><img onclick="document.getElementById('hi').play()" class="image_off" src="Media/Gifs/hi.gif" alt="hi" style="width:22px;height:20px;"><br>hi</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ni.png" alt="ni" style="width:22px;height:20px;" onclick="document.getElementById('ni').play()"><img  onclick="document.getElementById('ni').play()" class="image_off" src="Media/Gifs/ni.gif" alt="ni" style="width:22px;height:20px;"><br>ni</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/chi.png" alt="chi" style="width:22px;height:20px;" onclick="document.getElementById('ti').play()"><img onclick="document.getElementById('ti').play()" class="image_off" src="Media/Gifs/ti.gif" alt="ti" style="width:22px;height:20px;"><br>ti<br>(chi)</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/shi.png" alt="shi" style="width:22px;height:20px;" onclick="document.getElementById('si').play()"><img onclick="document.getElementById('si').play()" class="image_off" src="Media/Gifs/si.gif" alt="si" style="width:22px;height:20px;"><br>si<br>(shi)</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ki.png" alt="ki" style="width:22px;height:20px;" onclick="document.getElementById('ki').play()"><img onclick="document.getElementById('ki').play()"class="image_off" src="Media/Gifs/ki.gif" alt="ki" style="width:22px;height:20px;"><br>ki</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/i.png" alt="i" style="width:22px;height:20px;" onclick="document.getElementById('i').play()"><img onclick="document.getElementById('i').play()" class="image_off" src="Media/Gifs/i.gif" alt="i" style="width:22px;height:20px;"><br>i</td>
+    
+  </tr>
+  <tr>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ru.png" alt="ru" style="width:22px;height:20px;" onclick="document.getElementById('ru').play()"><img onclick="document.getElementById('ru').play()" class="image_off" src="Media/Gifs/ru.gif" alt="ru" style="width:22px;height:20px;"><br>ru</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/yu.png" alt="yu" style="width:22px;height:20px;" onclick="document.getElementById('yu').play()"><img onclick="document.getElementById('yu').play()" class="image_off" src="Media/Gifs/yu.gif" alt="yu" style="width:22px;height:20px;"><br>yu</td>
+	<td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/mu.png" alt="mu" style="width:22px;height:20px;" onclick="document.getElementById('mu').play()"><img onclick="document.getElementById('mu').play()" class="image_off" src="Media/Gifs/mu.gif" alt="mu" style="width:22px;height:20px;"><br>mu</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/fu.png" alt="fu" style="width:22px;height:20px;" onclick="document.getElementById('hu').play()"><img onclick="document.getElementById('hu').play()" class="image_off" src="Media/Gifs/hu.gif" alt="hu" style="width:22px;height:20px;"><br>hu<br>(fu)</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/nu.png" alt="nu" style="width:22px;height:20px;" onclick="document.getElementById('nu').play()"><img onclick="document.getElementById('nu').play()" class="image_off" src="Media/Gifs/nu.gif" alt="nu" style="width:22px;height:20px;"><br>nu</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/tsu.png" alt="tsu" style="width:22px;height:20px;" onclick="document.getElementById('tu').play()"><img onclick="document.getElementById('tu').play()" class="image_off" src="Media/Gifs/tu.gif" alt="tu" style="width:22px;height:20px;"><br>tu<br>(tsu)</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/su.png" alt="su" style="width:22px;height:20px;" onclick="document.getElementById('su').play()"><img onclick="document.getElementById('su').play()" class="image_off" src="Media/Gifs/su.gif" alt="su" style="width:22px;height:20px;"><br>su</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ku.png" alt="ku" style="width:22px;height:20px;" onclick="document.getElementById('ku').play()"><img onclick="document.getElementById('ku').play()" class="image_off" src="Media/Gifs/ku.gif" alt="ku" style="width:22px;height:20px;"><br>ku</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/u.png" alt="u" style="width:22px;height:20px;" onclick="document.getElementById('u').play()"><img onclick="document.getElementById('u').play()" class="image_off" src="Media/Gifs/u.gif" alt="u" style="width:22px;height:20px;"><br>u</td>
+
+  </tr>
+  <tr>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/re.png" alt="re" style="width:22px;height:20px;" onclick="document.getElementById('re').play()" ><img onclick="document.getElementById('re').play()" class="image_off" src="Media/Gifs/re.gif" alt="re" style="width:22px;height:20px;"><br>re</td>
+    <td id="home" class="tg-jq4u"></td>
+	<td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/me.png" alt="me" style="width:22px;height:20px;" onclick="document.getElementById('me').play()"><img  onclick="document.getElementById('me').play()" class="image_off" src="Media/Gifs/me.gif" alt="me" style="width:22px;height:20px;"><br>me</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/he.png" alt="he" style="width:22px;height:20px;" onclick="document.getElementById('he').play()"><img onclick="document.getElementById('he').play()" class="image_off" src="Media/Gifs/he.gif" alt="he" style="width:22px;height:20px;"><br>he</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ne.png" alt="ne" style="width:22px;height:20px;" onclick="document.getElementById('ne').play()"><img onclick="document.getElementById('ne').play()"class="image_off" src="Media/Gifs/ne.gif" alt="ne" style="width:22px;height:20px;"><br>ne</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/te.png" alt="te" style="width:22px;height:20px;" onclick="document.getElementById('te').play()"><img onclick="document.getElementById('te').play()"class="image_off" src="Media/Gifs/te.gif" alt="te" style="width:22px;height:20px;"><br>te</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/se.png" alt="se" style="width:22px;height:20px;" onclick="document.getElementById('se').play()"><img onclick="document.getElementById('se').play()" class="image_off" src="Media/Gifs/se.gif" alt="se" style="width:22px;height:20px;"><br>se</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ke.png" alt="ke" style="width:22px;height:20px;" onclick="document.getElementById('ke').play()"><img onclick="document.getElementById('ke').play()" class="image_off" src="Media/Gifs/ke.gif" alt="ke" style="width:22px;height:20px;"><br>ke</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/e.png" alt="e" style="width:22px;height:20px;" onclick="document.getElementById('e').play()"><img onclick="document.getElementById('e').play()" class="image_off" src="Media/Gifs/e.gif" alt="e" style="width:22px;height:20px;"><br>e</td>
+
+  </tr>
+  <tr>
+    <td id="home" class="tg-jq4u"></td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/wo.png" alt="wo" style="width:22px;height:20px;" onclick="document.getElementById('wo').play()"><img onclick="document.getElementById('wo').play()" class="image_off" src="Media/Gifs/wo.gif" alt="wo" style="width:22px;height:20px;"><br>wo<br>(o)</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ro.png" alt="ro" style="width:22px;height:20px;" onclick="document.getElementById('ro').play()"><img onclick="document.getElementById('ro').play()" class="image_off" src="Media/Gifs/ro.gif" alt="ro" style="width:22px;height:20px;"><br>ro</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/yo.png" alt="yo" style="width:22px;height:20px;" onclick="document.getElementById('yo').play()"><img onclick="document.getElementById('yo').play()" class="image_off" src="Media/Gifs/yo.gif" alt="yo" style="width:22px;height:20px;"><br>yo</td>
+	<td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/mo.png" alt="mo" style="width:22px;height:20px;" onclick="document.getElementById('mo').play()"><img onclick="document.getElementById('mo').play()" class="image_off" src="Media/Gifs/mo.gif" alt="mo" style="width:22px;height:20px;"><br>mo</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ho.png" alt="ho" style="width:22px;height:20px;" onclick="document.getElementById('ho').play()"><img onclick="document.getElementById('ho').play()" class="image_off" src="Media/Gifs/ho.gif" alt="ho" style="width:22px;height:20px;"><br>ho</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/no.png" alt="no" style="width:22px;height:20px;" onclick="document.getElementById('no').play()"><img onclick="document.getElementById('no').play()" class="image_off" src="Media/Gifs/no.gif" alt="no" style="width:22px;height:20px;"><br>no</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/to.png" alt="to" style="width:22px;height:20px;" onclick="document.getElementById('to').play()"><img onclick="document.getElementById('to').play()" class="image_off" src="Media/Gifs/to.gif" alt="to" style="width:22px;height:20px;"><br>to</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/so.png" alt="so" style="width:22px;height:20px;" onclick="document.getElementById('sp').play()"><img onclick="document.getElementById('so').play()" class="image_off" src="Media/Gifs/so.gif" alt="so" style="width:22px;height:20px;"><br>so</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/ko.png" alt="ko" style="width:22px;height:20px;" onclick="document.getElementById('ko').play()" ><img onclick="document.getElementById('ko').play()" class="image_off" src="Media/Gifs/ko.gif" alt="ko" style="width:22px;height:20px;"><br>ko</td>
+    <td id="home" class="tg-jq4u"><img class="image_on" src="Media/Images/o.png" alt="o" style="width:22px;height:20px;" onclick="document.getElementById('o').play()" ><img onclick="document.getElementById('o').play()" class="image_off" src="Media/Gifs/o.gif" alt="o" style="width:22px;height:20px;"><br>o</td>
+
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Quiz</h1>
+<p style="text-align:center">See below for quizes on each training set:</p>
+
+
+
+<p style="text-align:center">Note: If you do not answer each question in the quiz you will not be able to get your result!</p>
+<br>
+<br>
+<h3>Quiz for set a</h3>
+<form action="" method="post">
+<ol>
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/na.png" alt="na" style="width:25px;height:25px;">
+                    <div>
+					
+					
+                        <input type="radio" name="question-1-answersa" id="question-1-answersa-A" value="A" />
+                        <label for="question-1-answersa-A">A) a</label>
+						
+						
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersa" id="question-1-answersa-B" value="B" />
+                        <label for="question-1-answersa-B">B) ha</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersa" id="question-1-answersa-C" value="C" />
+                        <label for="question-1-answersa-C">C) n</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersa" id="question-1-answersa-D" value="D" />
+                        <label for="question-1-answersa-D">D) na</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ya.png" alt="ya" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-2-answersa" id="question-2-answersa-A" value="A" />
+                        <label for="question-2-answersa-A">A) ma</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersa" id="question-2-answersa-B" value="B" />
+                        <label for="question-2-answersa-B">B) ta</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersa" id="question-2-answersa-C" value="C" />
+                        <label for="question-2-answersa-C">C) ya</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersa" id="question-2-answersa-D" value="D" />
+                        <label for="question-2-answersa-D">D) sa</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ra.png" alt="ra" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-3-answersa" id="question-3-answersa-A" value="A" />
+                        <label for="question-3-answersa-A">A) ya</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersa" id="question-3-answersa-B" value="B" />
+                        <label for="question-3-answersa-B">B) ra</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersa" id="question-3-answersa-C" value="C" />
+                        <label for="question-3-answersa-C">C) n</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersa" id="question-3-answersa-D" value="D" />
+                        <label for="question-3-answersa-D">D) ka</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ma.png" alt="ma" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersa" id="question-4-answersa-A" value="A" />
+                        <label for="question-4-answersa-A">A) ha</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersa" id="question-4-answersa-B" value="B" />
+                        <label for="question-4-answersa-B">B) a</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersa" id="question-4-answersa-C" value="C" />
+                        <label for="question-4-answersa-C">C) na</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersa" id="question-4-answersa-D" value="D" />
+                        <label for="question-4-answersa-D">D) ma</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/wa.png" alt="wa" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersa" id="question-5-answersa-A" value="A" />
+                        <label for="question-5-answersa-A">A) wa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersa" id="question-5-answersa-B" value="B" />
+                        <label for="question-5-answersa-B">B) ma</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersa" id="question-5-answersa-C" value="C" />
+                        <label for="question-5-answersa-C">C) a</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersa" id="question-5-answersa-D" value="D" />
+                        <label for="question-5-answersa-D">D) na</label>
+                    </div>
+                
+                </li>
+                
+				
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/n.png" alt="n" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-6-answersa" id="question-6-answersa-A" value="A" />
+                        <label for="question-6-answersa-A">A) n</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersa" id="question-6-answersa-B" value="B" />
+                        <label for="question-6-answersa-B">B) ka</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersa" id="question-6-answersa-C" value="C" />
+                        <label for="question-6-answersa-C">C) wa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersa" id="question-6-answersa-D" value="D" />
+                        <label for="question-6-answersa-D">D) ha</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ta.png" alt="ta" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-7-answersa" id="question-7-answersa-A" value="A" />
+                        <label for="question-7-answersa-A">A) ma</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersa" id="question-7-answersa-B" value="B" />
+                        <label for="question-7-answersa-B">B) ta</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersa" id="question-7-answersa-C" value="C" />
+                        <label for="question-7-answersa-C">C) sa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersa" id="question-7-answersa-D" value="D" />
+                        <label for="question-7-answersa-D">D) ra</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/a.png" alt="a" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-8-answersa" id="question-8-answersa-A" value="A" />
+                        <label for="question-8-answersa-A">A) ha</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersa" id="question-8-answersa-B" value="B" />
+                        <label for="question-8-answersa-B">B) wa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersa" id="question-8-answersa-C" value="C" />
+                        <label for="question-8-answersa-C">C) sa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersa" id="question-8-answersa-D" value="D" />
+                        <label for="question-8-answersa-D">D) a</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/sa.png" alt="sa" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersa" id="question-9-answersa-A" value="A" />
+                        <label for="question-9-answersa-A">A) na</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersa" id="question-9-answersa-B" value="B" />
+                        <label for="question-9-answersa-B">B) n</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersa" id="question-9-answersa-C" value="C" />
+                        <label for="question-9-answersa-C">C) sa</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersa" id="question-9-answersa-D" value="D" />
+                        <label for="question-9-answersa-D">D) wa</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ka.png" alt="ka" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersa" id="question-10-answersa-A" value="A" />
+                        <label for="question-10-answersa-A">A) ka</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersa" id="question-10-answersa-B" value="B" />
+                        <label for="question-10-answersa-B">B) ha</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersa" id="question-10-answersa-C" value="C" />
+                        <label for="question-10-answersa-C">C) n</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersa" id="question-10-answersa-D" value="D" />
+                        <label for="question-10-answersa-D">D) ta</label>
+                    </div>
+                
+                </li>
+                
+				
+				</ol>
+				
+				<button id="submit" onclick="submitForma()" />Submit</button>
+				<output type="text" id="outputa" value="Result"> 
+				</output>
+				
+				<br>
+				<br>
+				<br>
+				
+				
+				
+				
+<h3>Quiz for set i</h3>
+<form action="" method="post">
+<ol>
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/shi.png" alt="shi" style="width:25px;height:25px;">
+                    <div>					
+                        <input type="radio" name="question-1-answersi" id="question-1-answersi-A" value="A" />
+                        <label for="question-1-answersi-A">A) ki</label>				
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersi" id="question-1-answersi-B" value="B" />
+                        <label for="question-1-answersi-B">B) shi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersi" id="question-1-answersi-C" value="C" />
+                        <label for="question-1-answersi-C">C) i</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersi" id="question-1-answersi-D" value="D" />
+                        <label for="question-1-answersi-D">D) ni</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/mi.png" alt="mi" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-2-answersi" id="question-2-answersi-A" value="A" />
+                        <label for="question-2-answersi-A">A) ni</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersi" id="question-2-answersi-B" value="B" />
+                        <label for="question-2-answersi-B">B) chi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersi" id="question-2-answersi-C" value="C" />
+                        <label for="question-2-answersi-C">C) mi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersi" id="question-2-answersi-D" value="D" />
+                        <label for="question-2-answersi-D">D) ri</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ri.png" alt="ri" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-3-answersi" id="question-3-answersi-A" value="A" />
+                        <label for="question-3-answersi-A">A) ri</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersi" id="question-3-answersi-B" value="B" />
+                        <label for="question-3-answersi-B">B) shi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersi" id="question-3-answersi-C" value="C" />
+                        <label for="question-3-answersi-C">C) ki</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersi" id="question-3-answersi-D" value="D" />
+                        <label for="question-3-answersi-D">D) i</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/hi.png" alt="hi" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersi" id="question-4-answersi-A" value="A" />
+                        <label for="question-4-answersi-A">A) mi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersi" id="question-4-answersi-B" value="B" />
+                        <label for="question-4-answersi-B">B) i</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersi" id="question-4-answersi-C" value="C" />
+                        <label for="question-4-answersi-C">C) hi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersi" id="question-4-answersi-D" value="D" />
+                        <label for="question-4-answersi-D">D) ki</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ni.png" alt="ni" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersi" id="question-5-answersi-A" value="A" />
+                        <label for="question-5-answersi-A">A) chi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersi" id="question-5-answersi-B" value="B" />
+                        <label for="question-5-answersi-B">B) shi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersi" id="question-5-answersi-C" value="C" />
+                        <label for="question-5-answersi-C">C) ni</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersi" id="question-5-answersi-D" value="D" />
+                        <label for="question-5-answersi-D">D) ki</label>
+                    </div>
+                
+                </li>
+                
+				
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/chi.png" alt="chi" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-6-answersi" id="question-6-answersi-A" value="A" />
+                        <label for="question-6-answersi-A">A) chi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersi" id="question-6-answersi-B" value="B" />
+                        <label for="question-6-answersi-B">B) i</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersi" id="question-6-answersi-C" value="C" />
+                        <label for="question-6-answersi-C">C) mi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersi" id="question-6-answersi-D" value="D" />
+                        <label for="question-6-answersi-D">D) ri</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/i.png" alt="i" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-7-answersi" id="question-7-answersi-A" value="A" />
+                        <label for="question-7-answersi-A">A) ri</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersi" id="question-7-answersi-B" value="B" />
+                        <label for="question-7-answersi-B">B) chi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersi" id="question-7-answersi-C" value="C" />
+                        <label for="question-7-answersi-C">C) i</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersi" id="question-7-answersi-D" value="D" />
+                        <label for="question-7-answersi-D">D) ni</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ni.png" alt="ni" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-8-answersi" id="question-8-answersi-A" value="A" />
+                        <label for="question-8-answersi-A">A) hi</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersi" id="question-8-answersi-B" value="B" />
+                        <label for="question-8-answersi-B">B) ki</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersi" id="question-8-answersi-C" value="C" />
+                        <label for="question-8-answersi-C">C) ni</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersi" id="question-8-answersi-D" value="D" />
+                        <label for="question-8-answersi-D">D) mi</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>Which kana represents the romaji 'i'</h4>
+                   
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersi" id="question-9-answersi-A" value="A" />
+                        <label for="question-9-answersi-A">A) </label><img src="Media/Images/shi.png" alt="shi" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersi" id="question-9-answersi-B" value="B" />
+                        <label for="question-9-answersi-B">B) </label><img src="Media/Images/i.png" alt="i" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersi" id="question-9-answersi-C" value="C" />
+                        <label for="question-9-answersi-C">C) </label><img src="Media/Images/hi.png" alt="hi" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersi" id="question-9-answersi-D" value="D" />
+                        <label for="question-9-answersi-D">D) </label><img src="Media/Images/ni.png" alt="ni" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>Which kana represents the romaji 'mi'</h4>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersi" id="question-10-answersi-A" value="A" />
+                        <label for="question-10-answersi-A">A) </label><img src="Media/Images/ni.png" alt="ni" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersi" id="question-10-answersi-B" value="B" />
+                        <label for="question-10-answersi-B">B) </label><img src="Media/Images/chi.png" alt="chi" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersi" id="question-10-answersi-C" value="C" />
+                        <label for="question-10-answersi-C">C) </label><img src="Media/Images/mi.png" alt="mi" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersi" id="question-10-answersi-D" value="D" />
+                        <label for="question-10-answersi-D">D) </label><img src="Media/Images/ki.png" alt="ki" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+				
+				</ol>
+				
+				<button id="submit" onclick="submitFormi()" />Submit</button>
+				<output type="text" id="outputi" value="Result"> 
+				</output>
+				
+				
+				<br>
+				<br>
+				<br>
+				
+				
+				
+				
+<h3>Quiz for set u</h3>
+<form action="" method="post">
+<ol>
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/fu.png" alt="fu" style="width:25px;height:25px;">
+                    <div>					
+                        <input type="radio" name="question-1-answersu" id="question-1-answersu-A" value="A" />
+                        <label for="question-1-answersu-A">A) yu</label>				
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersu" id="question-1-answersu-B" value="B" />
+                        <label for="question-1-answersu-B">B) mu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersu" id="question-1-answersu-C" value="C" />
+                        <label for="question-1-answersu-C">C) u</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answersu" id="question-1-answersu-D" value="D" />
+                        <label for="question-1-answersu-D">D) fu</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/yu.png" alt="yu" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-2-answersu" id="question-2-answersu-A" value="A" />
+                        <label for="question-2-answersu-A">A) yu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersu" id="question-2-answersu-B" value="B" />
+                        <label for="question-2-answersu-B">B) tsu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersu" id="question-2-answersu-C" value="C" />
+                        <label for="question-2-answersu-C">C) su</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answersu" id="question-2-answersu-D" value="D" />
+                        <label for="question-2-answersu-D">D) ku</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/su.png" alt="su" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-3-answersu" id="question-3-answersu-A" value="A" />
+                        <label for="question-3-answersu-A">A) ru</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersu" id="question-3-answersu-B" value="B" />
+                        <label for="question-3-answersu-B">B) mu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersu" id="question-3-answersu-C" value="C" />
+                        <label for="question-3-answersu-C">C) su</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answersu" id="question-3-answersu-D" value="D" />
+                        <label for="question-3-answersu-D">D) ku</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/nu.png" alt="nu" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersu" id="question-4-answersu-A" value="A" />
+                        <label for="question-4-answersu-A">A) nu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersu" id="question-4-answersu-B" value="B" />
+                        <label for="question-4-answersu-B">B) u</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersu" id="question-4-answersu-C" value="C" />
+                        <label for="question-4-answersu-C">C) ru</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answersu" id="question-4-answersu-D" value="D" />
+                        <label for="question-4-answersu-D">D) mu</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ru.png" alt="ru" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersu" id="question-5-answersu-A" value="A" />
+                        <label for="question-5-answersu-A">A) mu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersu" id="question-5-answersu-B" value="B" />
+                        <label for="question-5-answersu-B">B) ku</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersu" id="question-5-answersu-C" value="C" />
+                        <label for="question-5-answersu-C">C) ru</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answersu" id="question-5-answersu-D" value="D" />
+                        <label for="question-5-answersu-D">D) u</label>
+                    </div>
+                
+                </li>
+                
+				
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/tsu.png" alt="tsu" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-6-answersu" id="question-6-answersu-A" value="A" />
+                        <label for="question-6-answersu-A">A) mu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersu" id="question-6-answersu-B" value="B" />
+                        <label for="question-6-answersu-B">B) fu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersu" id="question-6-answersu-C" value="C" />
+                        <label for="question-6-answersu-C">C) ku</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answersu" id="question-6-answersu-D" value="D" />
+                        <label for="question-6-answersu-D">D) tsu</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/mu.png" alt="mu" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-7-answersu" id="question-7-answersu-A" value="A" />
+                        <label for="question-7-answersu-A">A) ru</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersu" id="question-7-answersu-B" value="B" />
+                        <label for="question-7-answersu-B">B) mu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersu" id="question-7-answersu-C" value="C" />
+                        <label for="question-7-answersu-C">C) nu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answersu" id="question-7-answersu-D" value="D" />
+                        <label for="question-7-answersu-D">D) ku</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ku.png" alt="ku" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-8-answersu" id="question-8-answersu-A" value="A" />
+                        <label for="question-8-answersu-A">A) fu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersu" id="question-8-answersu-B" value="B" />
+                        <label for="question-8-answersu-B">B) tsu</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersu" id="question-8-answersu-C" value="C" />
+                        <label for="question-8-answersu-C">C) u</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answersu" id="question-8-answersu-D" value="D" />
+                        <label for="question-8-answersu-D">D) ku</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>Which kana represents the romaji 'u'</h4>
+                   
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersu" id="question-9-answersu-A" value="A" />
+                        <label for="question-9-answersu-A">A) </label><img src="Media/Images/tsu.png" alt="tsu" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersu" id="question-9-answersu-B" value="B" />
+                        <label for="question-9-answersu-B">B) </label><img src="Media/Images/u.png" alt="u" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersu" id="question-9-answersu-C" value="C" />
+                        <label for="question-9-answersu-C">C) </label><img src="Media/Images/yu.png" alt="yu" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answersu" id="question-9-answersu-D" value="D" />
+                        <label for="question-9-answersu-D">D) </label><img src="Media/Images/ku.png" alt="ku" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>Which kana represents the romaji 'tsu'</h4>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersu" id="question-10-answersu-A" value="A" />
+                        <label for="question-10-answersu-A">A) </label><img src="Media/Images/tsu.png" alt="tsu" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersu" id="question-10-answersu-B" value="B" />
+                        <label for="question-10-answersu-B">B) </label><img src="Media/Images/fu.png" alt="fu" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersu" id="question-10-answersu-C" value="C" />
+                        <label for="question-10-answersu-C">C) </label><img src="Media/Images/su.png" alt="su" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answersu" id="question-10-answersu-D" value="D" />
+                        <label for="question-10-answersu-D">D) </label><img src="Media/Images/ku.png" alt="ku" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+				
+				</ol>
+				
+				<button id="submit" onclick="submitFormu()" />Submit</button>
+				<output type="text" id="outputu" value="Result"> 
+				</output>
+				
+				
+				<br>
+				<br>
+				<br>
+				
+				
+				
+				
+<h3>Quiz for set e</h3>
+<form action="" method="post">
+<ol>
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ke.png" alt="ke" style="width:25px;height:25px;">
+                    <div>					
+                        <input type="radio" name="question-1-answerse" id="question-1-answerse-A" value="A" />
+                        <label for="question-1-answerse-A">A) ke</label>				
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerse" id="question-1-answerse-B" value="B" />
+                        <label for="question-1-answerse-B">B) re</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerse" id="question-1-answerse-C" value="C" />
+                        <label for="question-1-answerse-C">C) me</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerse" id="question-1-answerse-D" value="D" />
+                        <label for="question-1-answerse-D">D) e</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/re.png" alt="re" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-2-answerse" id="question-2-answerse-A" value="A" />
+                        <label for="question-2-answerse-A">A) ne</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerse" id="question-2-answerse-B" value="B" />
+                        <label for="question-2-answerse-B">B) re</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerse" id="question-2-answerse-C" value="C" />
+                        <label for="question-2-answerse-C">C) se</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerse" id="question-2-answerse-D" value="D" />
+                        <label for="question-2-answerse-D">D) he</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/me.png" alt="me" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-3-answerse" id="question-3-answerse-A" value="A" />
+                        <label for="question-3-answerse-A">A) te</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerse" id="question-3-answerse-B" value="B" />
+                        <label for="question-3-answerse-B">B) me</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerse" id="question-3-answerse-C" value="C" />
+                        <label for="question-3-answerse-C">C) e</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerse" id="question-3-answerse-D" value="D" />
+                        <label for="question-3-answerse-D">D) ke</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/se.png" alt="se" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerse" id="question-4-answerse-A" value="A" />
+                        <label for="question-4-answerse-A">A) he</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerse" id="question-4-answerse-B" value="B" />
+                        <label for="question-4-answerse-B">B) te</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerse" id="question-4-answerse-C" value="C" />
+                        <label for="question-4-answerse-C">C) re</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerse" id="question-4-answerse-D" value="D" />
+                        <label for="question-4-answerse-D">D) se</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ne.png" alt="ne" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerse" id="question-5-answerse-A" value="A" />
+                        <label for="question-5-answerse-A">A) te</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerse" id="question-5-answerse-B" value="B" />
+                        <label for="question-5-answerse-B">B) se</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerse" id="question-5-answerse-C" value="C" />
+                        <label for="question-5-answerse-C">C) ne</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerse" id="question-5-answerse-D" value="D" />
+                        <label for="question-5-answerse-D">D) e</label>
+                    </div>
+                
+                </li>
+                
+				
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/te.png" alt="te" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-6-answerse" id="question-6-answerse-A" value="A" />
+                        <label for="question-6-answerse-A">A) te</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerse" id="question-6-answerse-B" value="B" />
+                        <label for="question-6-answerse-B">B) he</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerse" id="question-6-answerse-C" value="C" />
+                        <label for="question-6-answerse-C">C) se</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerse" id="question-6-answerse-D" value="D" />
+                        <label for="question-6-answerse-D">D) me</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/he.png" alt="he" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-7-answerse" id="question-7-answerse-A" value="A" />
+                        <label for="question-7-answerse-A">A) me</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerse" id="question-7-answerse-B" value="B" />
+                        <label for="question-7-answerse-B">B) ne</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerse" id="question-7-answerse-C" value="C" />
+                        <label for="question-7-answerse-C">C) e</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerse" id="question-7-answerse-D" value="D" />
+                        <label for="question-7-answerse-D">D) he</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/e.png" alt="e" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-8-answerse" id="question-8-answerse-A" value="A" />
+                        <label for="question-8-answerse-A">A) re</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerse" id="question-8-answerse-B" value="B" />
+                        <label for="question-8-answerse-B">B) te</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerse" id="question-8-answerse-C" value="C" />
+                        <label for="question-8-answerse-C">C) e</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerse" id="question-8-answerse-D" value="D" />
+                        <label for="question-8-answerse-D">D) me</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>Which kana represents the romaji 're'</h4>
+                   
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerse" id="question-9-answerse-A" value="A" />
+                        <label for="question-9-answerse-A">A) </label><img src="Media/Images/te.png" alt="te" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerse" id="question-9-answerse-B" value="B" />
+                        <label for="question-9-answerse-B">B) </label><img src="Media/Images/re.png" alt="re" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerse" id="question-9-answerse-C" value="C" />
+                        <label for="question-9-answerse-C">C) </label><img src="Media/Images/e.png" alt="e" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerse" id="question-9-answerse-D" value="D" />
+                        <label for="question-9-answerse-D">D) </label><img src="Media/Images/se.png" alt="se" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>Which kana represents the romaji 'he'</h4>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerse" id="question-10-answerse-A" value="A" />
+                        <label for="question-10-answerse-A">A) </label><img src="Media/Images/he.png" alt="he" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerse" id="question-10-answerse-B" value="B" />
+                        <label for="question-10-answerse-B">B) </label><img src="Media/Images/me.png" alt="me" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerse" id="question-10-answerse-C" value="C" />
+                        <label for="question-10-answerse-C">C) </label><img src="Media/Images/re.png" alt="re" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerse" id="question-10-answerse-D" value="D" />
+                        <label for="question-10-answerse-D">D) </label><img src="Media/Images/e.png" alt="e" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+				
+				</ol>
+				
+				<button id="submit" onclick="submitForme()" />Submit</button>
+				<output type="text" id="outpute" value="Result"> 
+				</output>
+				
+								<br>
+				<br>
+				<br>
+				
+				
+				
+				
+<h3>Quiz for set o</h3>
+<form action="" method="post">
+<ol>
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/o.png" alt="o" style="width:25px;height:25px;">
+                    <div>					
+                        <input type="radio" name="question-1-answerso" id="question-1-answerso-A" value="A" />
+                        <label for="question-1-answerso-A">A) ko</label>				
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerso" id="question-1-answerso-B" value="B" />
+                        <label for="question-1-answerso-B">B) o</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerso" id="question-1-answerso-C" value="C" />
+                        <label for="question-1-answerso-C">C) ho</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answerso" id="question-1-answerso-D" value="D" />
+                        <label for="question-1-answerso-D">D) no</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/so.png" alt="so" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-2-answerso" id="question-2-answerso-A" value="A" />
+                        <label for="question-2-answerso-A">A) so</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerso" id="question-2-answerso-B" value="B" />
+                        <label for="question-2-answerso-B">B) to</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerso" id="question-2-answerso-C" value="C" />
+                        <label for="question-2-answerso-C">C) ko</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answerso" id="question-2-answerso-D" value="D" />
+                        <label for="question-2-answerso-D">D) yo</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/mo.png" alt="mo" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-3-answerso" id="question-3-answerso-A" value="A" />
+                        <label for="question-3-answerso-A">A) wo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerso" id="question-3-answerso-B" value="B" />
+                        <label for="question-3-answerso-B">B) yo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerso" id="question-3-answerso-C" value="C" />
+                        <label for="question-3-answerso-C">C) mo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answerso" id="question-3-answerso-D" value="D" />
+                        <label for="question-3-answerso-D">D) ro</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ho.png" alt="ho" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerso" id="question-4-answerso-A" value="A" />
+                        <label for="question-4-answerso-A">A) ho</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerso" id="question-4-answerso-B" value="B" />
+                        <label for="question-4-answerso-B">B) to</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerso" id="question-4-answerso-C" value="C" />
+                        <label for="question-4-answerso-C">C) ro</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answerso" id="question-4-answerso-D" value="D" />
+                        <label for="question-4-answerso-D">D) wo</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/wo.png" alt="wo" style="width:25px;height:25px;">
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerso" id="question-5-answerso-A" value="A" />
+                        <label for="question-5-answerso-A">A) yo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerso" id="question-5-answerso-B" value="B" />
+                        <label for="question-5-answerso-B">B) so</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerso" id="question-5-answerso-C" value="C" />
+                        <label for="question-5-answerso-C">C) ko</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answerso" id="question-5-answerso-D" value="D" />
+                        <label for="question-5-answerso-D">D) wo</label>
+                    </div>
+                
+                </li>
+                
+				
+                    <li>
+                    <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/ro.png" alt="ro" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-6-answerso" id="question-6-answerso-A" value="A" />
+                        <label for="question-6-answerso-A">A) yo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerso" id="question-6-answerso-B" value="B" />
+                        <label for="question-6-answerso-B">B) o</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerso" id="question-6-answerso-C" value="C" />
+                        <label for="question-6-answerso-C">C) ro</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-6-answerso" id="question-6-answerso-D" value="D" />
+                        <label for="question-6-answerso-D">D) wo</label>
+                    </div>
+                 </form>
+                </li>
+				
+				 <li>
+                
+                   <h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/no.png" alt="no" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-7-answerso" id="question-7-answerso-A" value="A" />
+                        <label for="question-7-answerso-A">A) no</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerso" id="question-7-answerso-B" value="B" />
+                        <label for="question-7-answerso-B">B) ho</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerso" id="question-7-answerso-C" value="C" />
+                        <label for="question-7-answerso-C">C) yo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-7-answerso" id="question-7-answerso-D" value="D" />
+                        <label for="question-7-answerso-D">D) so</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+				<h4>What romaji does this kana represent?</h4>
+                    <img src="Media/Images/to.png" alt="to" style="width:25px;height:25px;">
+                    <div>
+                        <input type="radio" name="question-8-answerso" id="question-8-answerso-A" value="A" />
+                        <label for="question-8-answerso-A">A) ko</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerso" id="question-8-answerso-B" value="B" />
+                        <label for="question-8-answerso-B">B) o</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerso" id="question-8-answerso-C" value="C" />
+                        <label for="question-8-answerso-C">C) wo</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-8-answerso" id="question-8-answerso-D" value="D" />
+                        <label for="question-8-answerso-D">D) to</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h4>Which kana represents the romaji 'yo'</h4>
+                   
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerso" id="question-9-answerso-A" value="A" />
+                        <label for="question-9-answerso-A">A) </label><img src="Media/Images/yo.png" alt="yo" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerso" id="question-9-answerso-B" value="B" />
+                        <label for="question-9-answerso-B">B) </label><img src="Media/Images/o.png" alt="o" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerso" id="question-9-answerso-C" value="C" />
+                        <label for="question-9-answerso-C">C) </label><img src="Media/Images/mo.png" alt="mo" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-9-answerso" id="question-9-answerso-D" value="D" />
+                        <label for="question-9-answerso-D">D) </label><img src="Media/Images/so.png" alt="so" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                   <h4>Which kana represents the romaji 'ko'</h4>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerso" id="question-10-answerso-A" value="A" />
+                        <label for="question-10-answerso-A">A) </label><img src="Media/Images/ho.png" alt="ho" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerso" id="question-10-answerso-B" value="B" />
+                        <label for="question-10-answerso-B">B) </label><img src="Media/Images/ko.png" alt="ko" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerso" id="question-10-answerso-C" value="C" />
+                        <label for="question-10-answerso-C">C) </label><img src="Media/Images/mo.png" alt="mo" style="width:23px;height:23px;">
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-10-answerso" id="question-10-answerso-D" value="D" />
+                        <label for="question-10-answerso-D">D) </label><img src="Media/Images/to.png" alt="to" style="width:23px;height:23px;">
+                    </div>
+                
+                </li>
+                
+				
+				</ol>
+				
+				<button id="submit" onclick="submitFormo()" />Submit</button>
+				<output type="text" id="outputo" value="Result"> 
+				</output>
+				
+				
+				<script>
+				function submitForma()
+				{
+				var ans1 = document.querySelector('input[name = "question-1-answersa"]:checked').value;
+				var ans2 = document.querySelector('input[name = "question-2-answersa"]:checked').value;
+				var ans3 = document.querySelector('input[name = "question-3-answersa"]:checked').value;
+				var ans4 = document.querySelector('input[name = "question-4-answersa"]:checked').value;
+				var ans5 = document.querySelector('input[name = "question-5-answersa"]:checked').value;
+				var ans6 = document.querySelector('input[name = "question-6-answersa"]:checked').value;
+				var ans7 = document.querySelector('input[name = "question-7-answersa"]:checked').value;
+				var ans8 = document.querySelector('input[name = "question-8-answersa"]:checked').value;
+				var ans9 = document.querySelector('input[name = "question-9-answersa"]:checked').value;
+				var ans10 = document.querySelector('input[name = "question-10-answersa"]:checked').value;
+				var total=0;
+				if(ans1=='D'){total++;}
+				if(ans2=='C'){total++;}
+				if(ans3=='B'){total++;}
+				if(ans4=='D'){total++;}
+				if(ans5=='A'){total++;}
+				if(ans6=='A'){total++;}
+				if(ans7=='B'){total++;}
+				if(ans8=='D'){total++;}
+				if(ans9=='C'){total++;}
+				if(ans10=='A'){total++;}
+				
+				var str="Result: ";
+				str+=total.toString();
+				str+="%";
+				document.getElementById('outputa').value=str;
+				
+				}
+				
+				
+				
+				function submitFormi()
+				{
+				var ans1 = document.querySelector('input[name = "question-1-answersi"]:checked').value;
+				var ans2 = document.querySelector('input[name = "question-2-answersi"]:checked').value;
+				var ans3 = document.querySelector('input[name = "question-3-answersi"]:checked').value;
+				var ans4 = document.querySelector('input[name = "question-4-answersi"]:checked').value;
+				var ans5 = document.querySelector('input[name = "question-5-answersi"]:checked').value;
+				var ans6 = document.querySelector('input[name = "question-6-answersi"]:checked').value;
+				var ans7 = document.querySelector('input[name = "question-7-answersi"]:checked').value;
+				var ans8 = document.querySelector('input[name = "question-8-answersi"]:checked').value;
+				var ans9 = document.querySelector('input[name = "question-9-answersi"]:checked').value;
+				var ans10 = document.querySelector('input[name = "question-10-answersi"]:checked').value;
+				var total=0;
+				if(ans1=='B'){total++;}
+				if(ans2=='C'){total++;}
+				if(ans3=='A'){total++;}
+				if(ans4=='C'){total++;}
+				if(ans5=='C'){total++;}
+				if(ans6=='A'){total++;}
+				if(ans7=='C'){total++;}
+				if(ans8=='C'){total++;}
+				if(ans9=='B'){total++;}
+				if(ans10=='C'){total++;}
+				
+				var str="Result: ";
+				str+=total.toString();
+				str+="%";
+				document.getElementById('outputi').value=str;
+				
+				}
+				
+				
+				function submitFormu()
+				{
+				var ans1 = document.querySelector('input[name = "question-1-answersu"]:checked').value;
+				var ans2 = document.querySelector('input[name = "question-2-answersu"]:checked').value;
+				var ans3 = document.querySelector('input[name = "question-3-answersu"]:checked').value;
+				var ans4 = document.querySelector('input[name = "question-4-answersu"]:checked').value;
+				var ans5 = document.querySelector('input[name = "question-5-answersu"]:checked').value;
+				var ans6 = document.querySelector('input[name = "question-6-answersu"]:checked').value;
+				var ans7 = document.querySelector('input[name = "question-7-answersu"]:checked').value;
+				var ans8 = document.querySelector('input[name = "question-8-answersu"]:checked').value;
+				var ans9 = document.querySelector('input[name = "question-9-answersu"]:checked').value;
+				var ans10 = document.querySelector('input[name = "question-10-answersu"]:checked').value;
+				var total=0;
+				if(ans1=='D'){total++;}
+				if(ans2=='A'){total++;}
+				if(ans3=='C'){total++;}
+				if(ans4=='A'){total++;}
+				if(ans5=='C'){total++;}
+				if(ans6=='D'){total++;}
+				if(ans7=='B'){total++;}
+				if(ans8=='D'){total++;}
+				if(ans9=='B'){total++;}
+				if(ans10=='A'){total++;}
+				
+				var str="Result: ";
+				str+=total.toString();
+				str+="%";
+				document.getElementById('outputu').value=str;
+				
+				}
+				
+				function submitForme()
+				{
+				var ans1 = document.querySelector('input[name = "question-1-answerse"]:checked').value;
+				var ans2 = document.querySelector('input[name = "question-2-answerse"]:checked').value;
+				var ans3 = document.querySelector('input[name = "question-3-answerse"]:checked').value;
+				var ans4 = document.querySelector('input[name = "question-4-answerse"]:checked').value;
+				var ans5 = document.querySelector('input[name = "question-5-answerse"]:checked').value;
+				var ans6 = document.querySelector('input[name = "question-6-answerse"]:checked').value;
+				var ans7 = document.querySelector('input[name = "question-7-answerse"]:checked').value;
+				var ans8 = document.querySelector('input[name = "question-8-answerse"]:checked').value;
+				var ans9 = document.querySelector('input[name = "question-9-answerse"]:checked').value;
+				var ans10 = document.querySelector('input[name = "question-10-answerse"]:checked').value;
+				var total=0;
+				if(ans1=='A'){total++;}
+				if(ans2=='B'){total++;}
+				if(ans3=='B'){total++;}
+				if(ans4=='D'){total++;}
+				if(ans5=='C'){total++;}
+				if(ans6=='A'){total++;}
+				if(ans7=='D'){total++;}
+				if(ans8=='C'){total++;}
+				if(ans9=='B'){total++;}
+				if(ans10=='A'){total++;}
+				
+				var str="Result: ";
+				str+=total.toString();
+				str+="%";
+				document.getElementById('outpute').value=str;
+				
+				}
+				
+				
+				function submitFormo()
+				{
+				var ans1 = document.querySelector('input[name = "question-1-answerso"]:checked').value;
+				var ans2 = document.querySelector('input[name = "question-2-answerso"]:checked').value;
+				var ans3 = document.querySelector('input[name = "question-3-answerso"]:checked').value;
+				var ans4 = document.querySelector('input[name = "question-4-answerso"]:checked').value;
+				var ans5 = document.querySelector('input[name = "question-5-answerso"]:checked').value;
+				var ans6 = document.querySelector('input[name = "question-6-answerso"]:checked').value;
+				var ans7 = document.querySelector('input[name = "question-7-answerso"]:checked').value;
+				var ans8 = document.querySelector('input[name = "question-8-answerso"]:checked').value;
+				var ans9 = document.querySelector('input[name = "question-9-answerso"]:checked').value;
+				var ans10 = document.querySelector('input[name = "question-10-answerso"]:checked').value;
+				var total=0;
+				if(ans1=='B'){total++;}
+				if(ans2=='A'){total++;}
+				if(ans3=='C'){total++;}
+				if(ans4=='A'){total++;}
+				if(ans5=='D'){total++;}
+				if(ans6=='C'){total++;}
+				if(ans7=='A'){total++;}
+				if(ans8=='D'){total++;}
+				if(ans9=='A'){total++;}
+				if(ans10=='B'){total++;}
+				
+				var str="Result: ";
+				str+=total.toString();
+				str+="%";
+				document.getElementById('outputo').value=str;
+				
+				}
+				
+				</script>
+</body>
+
+<html>
